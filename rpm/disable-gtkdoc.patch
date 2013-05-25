@@ -1,0 +1,15 @@
+diff --git a/configure.ac b/configure.ac
+index c006934..a4a2398 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -272,7 +272,10 @@ AM_CONDITIONAL(HAVE_VALA, test "x$with_vala" = "xyes")
+ # GTK-DOC
+ # ----------------------------------------------------------
+ 
++AM_CONDITIONAL(ENABLE_GTK_DOC, test "x$enable_gtk_doc" = xyes)
++m4_ifdef([GTK_DOC_CHECK], [
+ GTK_DOC_CHECK([1.10],[--flavour no-tmpl])
++])
+ 
+ # ----------------------------------------------------------
+ # GOBJECT-INTROSPECTION
