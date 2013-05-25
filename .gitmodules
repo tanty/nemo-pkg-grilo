@@ -1,0 +1,3 @@
+[submodule "grilo"]
+	path = grilo
+	url = git://git.gnome.org/grilo
