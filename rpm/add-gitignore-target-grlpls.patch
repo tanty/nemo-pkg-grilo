@@ -1,0 +1,10 @@
+diff --git a/libs/pls/Makefile.am b/libs/pls/Makefile.am
+index eec8a09..91d7b20 100644
+--- a/libs/pls/Makefile.am
++++ b/libs/pls/Makefile.am
+@@ -70,3 +70,5 @@ typelib_DATA = $(INTROSPECTION_GIRS:.gir=.typelib)
+ 
+ CLEANFILES += $(dist_gir_DATA) $(typelib_DATA)
+ endif
++
++-include $(top_srcdir)/git.mk
